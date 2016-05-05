@@ -4,7 +4,7 @@
  */
 import React, { AppRegistry } from 'react-native'
 import { Provider } from 'react-redux'
-import App from './views/IOS'
+import App from './views/App'
 import store from './store'
 
 const VERSION = '0.1.0'
