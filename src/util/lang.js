@@ -1,5 +1,6 @@
 
 var hasOwnProperty = Object.prototype.hasOwnProperty
+import {Dimensions} from 'react-native'
 /**
  * Check whether the object has the property.
  *
@@ -60,4 +61,9 @@ export function isPromise (value) {
   if (value !== null && typeof value === 'object') {
     return value.promise && typeof value.promise.then === 'function'
   }
+}
+
+export const size =  {
+  width: Dimensions.get('window').width,
+  height: Dimensions.get('window').height
 }

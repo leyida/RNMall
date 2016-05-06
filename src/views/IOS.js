@@ -10,6 +10,7 @@ import React,{
 	TabBarIOS,
 	NavigatorIOS } from 'react-native'
 //var Login = require('./login');
+import Home from './home/index';
 //var Home = require('./home/index');
 //var Market = require('./market/index');
 //var ShoppingCart = require('./shoppingcart');
@@ -18,8 +19,7 @@ import React,{
 //var Scan = require('./search/search');
 // StatusBarIOS.setStyle('light-content');
 
-
-export default class App extends  React.Component {
+export default class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -51,7 +51,7 @@ export default class App extends  React.Component {
 	}
 	_addNavigator(component, title){
 		var data = null;
-		if(this.state.selectedTab ==='home'||this.state.selectedTab==='market'){
+		if(this.state.selectedTab ==='home' || this.state.selectedTab==='market'){
 			return <NavigatorIOS
 				style={{flex:1}}
 				barTintColor='#6bb967'
@@ -119,8 +119,8 @@ export default class App extends  React.Component {
 					selected={this.state.selectedTab ==='home'}
 					onPress={this._selectTab.bind(this,'home')}
 				>
-					<View><Text>1</Text></View>
-					{/*this._addNavigator(Home,'首页')*/}
+
+					{this._addNavigator(Home,'首页')}
 				</TabBarIOS.Item>
 
 				<TabBarIOS.Item

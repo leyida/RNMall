@@ -3,7 +3,6 @@
  */
 import React,{DrawerLayoutAndroid} from 'react-native'
 export default class Android extends React.Component{
-	constructor(){}
 	render() {
 		var navigationView = (
 			<View style={{flex: 1, backgroundColor: '#fff'}}>
