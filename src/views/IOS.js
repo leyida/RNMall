@@ -114,7 +114,7 @@ export default class App extends React.Component {
 		return (
 			<TabBarIOS>
 				<TabBarIOS.Item
-					title="首页"
+					title="code push"
 					icon={require('../../image/icon_bottomtag_home_n@2x.png')}
 					selected={this.state.selectedTab ==='home'}
 					onPress={this._selectTab.bind(this,'home')}
@@ -124,24 +124,13 @@ export default class App extends React.Component {
 				</TabBarIOS.Item>
 
 				<TabBarIOS.Item
-					title="闪送超市"
+					title="test"
 					icon={require('../../image/icon_bottomtag_market_n@2x.png')}
 					selected={this.state.selectedTab ==='market'}
 					onPress={this._selectTab.bind(this,'market')}
 				>
 					{/*this._addNavigator(Market,'闪送超市')*/}
 				</TabBarIOS.Item>
-
-				<TabBarIOS.Item
-					title="购物车"
-					badge="4"
-					icon={require('../../image/icon_bottomtag_cart_n@2x.png')}
-					selected={this.state.selectedTab ==='shoppingcart'}
-					onPress={this._selectTab.bind(this,'shoppingcart')}
-				>
-					{/*this._addNavigator(ShoppingCart,'购物车')*/}
-			</TabBarIOS.Item>
-
 				<TabBarIOS.Item
 					title="个人中心"
 					icon={require('../../image/icon_bottomtag_me_n@2x.png')}

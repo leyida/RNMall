@@ -53,7 +53,6 @@ export function each (obj, iterator) {
       }
     }
   }
-
   return obj
 }
 

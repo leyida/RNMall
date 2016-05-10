@@ -9,6 +9,7 @@
     "key-mirror": "^1.0.1",
     "react": "^0.14.8",
     "react-native": "^0.24.1",
+    "react-native-code-push": "^1.10.6-beta",
     "react-native-swiper": "^1.4.3",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
